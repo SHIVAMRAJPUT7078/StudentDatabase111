@@ -13,7 +13,7 @@ public class StudentFetch {
         ResultSet dataSet = statement.executeQuery("SELECT * FROM Student;");
         System.out.println(String.format("|%12s|%4s|%4s|%4s","Roll Number","Name","Year","CPI"));
         while(dataSet.next()){
-            int roll = dataSet.getInt("rollNumber");
+            int roll = dataSet.getInt("rollnumber");
             String name = dataSet.getString("name");
             int year = dataSet.getInt("year");
             double cpi = dataSet.getDouble("cpi");
